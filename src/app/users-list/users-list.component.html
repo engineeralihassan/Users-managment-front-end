@@ -1,0 +1,47 @@
+
+<div class="header mt-5 mb-5">
+    <h1 >Magnatec Users List</h1>
+    <button><a routerLink="/add-user">Add New User</a></button>
+</div>
+        <table class="table tbll">
+          
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Occupation</th>
+                <th scope="col">Gender</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>
+                  <i class="fa fa-edit"></i>
+                </th>
+                <th>
+                  <i class="fa fa-trash-o"></i>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of users">
+                <th >{{user.id}}</th>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.occupation}}</td>
+                <td>{{user.gender}}</td>
+                <td>{{user.country}}</td>
+                <td>{{user.city}}
+                </td>
+                <td (click)="updateRecord(user.id)" routerLink="/update/{{user.name}}"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-edit"></i>
+                </button></td>
+                <td  (click)="deleteRecord(user.id)"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-trash-o"></i>
+                </button></td>
+              </tr>
+         
+            </tbody>
+          </table>
+
+
+

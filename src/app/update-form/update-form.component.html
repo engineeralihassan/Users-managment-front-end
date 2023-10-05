@@ -1,0 +1,41 @@
+<div class="form-container">
+    <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+        <div  class="inner-field">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" formControlName="name" placeholder="Enter you full name" >
+        </div>
+        <div class="inner-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" formControlName="email" placeholder="Enter you email" >
+        </div>
+        <div class="inner-field">
+          <label for="occupation">Occupation</label>
+          <select id="occupation" formControlName="occupation">
+            <option *ngFor="let op of options" [value]="op">{{op}}</option>
+           
+          </select>
+        </div>
+        <div class="form-group gerder-main">
+            <label>Gender</label>
+            <div class="gender-inner">
+                <label *ngFor="let gen of genders1">
+                    <input type="radio" [value]="gen" formControlName="gender"> {{gen}}
+                  </label>
+
+            </div>
+          </div>
+
+            <div class="inner-field">
+                <label for="country">Country</label>
+                <input type="text" id="country" formControlName="country" placeholder="Enter you country" >
+              </div>
+          <div class="inner-field">
+            <label for="city">City</label>
+            <input type="text" id="city" formControlName="city" placeholder="Enter you city" >
+          </div>
+
+        <button type="submit" >update</button>
+      </form>
+      
+      
+</div>

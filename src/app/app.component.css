@@ -1,0 +1,13 @@
+.main-container{
+    background-color: blueviolet;
+    color: #ffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+
+    min-height: 96.7vh;
+
+}
+.nav-link{
+    color: blueviolet !important;
+}

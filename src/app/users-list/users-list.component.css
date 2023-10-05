@@ -1,0 +1,35 @@
+.container{
+    width: 100% !important;
+}
+.tbll{
+    min-width: auto;
+}
+.tbll tr{
+    width: auto;
+    border: 1px solid black;
+}
+td i{
+    cursor: pointer;
+}
+.tbll td,th{
+    border: 1px solid white;
+    padding: 5px 20px;
+    color: rgb(0, 0, 0);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header button{
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: 1px solid white;
+}
+button a{
+    text-decoration: none;
+    color: wheat;
+    font-weight: bold;
+}
