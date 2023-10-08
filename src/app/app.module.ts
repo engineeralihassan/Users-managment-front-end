@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toastr';
 import { UpdateFormComponent } from './update-form/update-form.component';
 import { FormArrayExampleComponent } from './form-array-example/form-array-example.component';
+import { NestedFormarrayComponent } from './nested-formarray/nested-formarray.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FormArrayExampleComponent } from './form-array-example/form-array-examp
     FormComponent,
     UsersListComponent,
     UpdateFormComponent,
-    FormArrayExampleComponent
+    FormArrayExampleComponent,
+    NestedFormarrayComponent
   ],
   imports: [
     BrowserModule,
