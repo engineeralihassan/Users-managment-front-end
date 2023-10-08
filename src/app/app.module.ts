@@ -9,6 +9,7 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toastr';
 import { UpdateFormComponent } from './update-form/update-form.component';
+import { FormArrayExampleComponent } from './form-array-example/form-array-example.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { UpdateFormComponent } from './update-form/update-form.component';
     AppComponent,
     FormComponent,
     UsersListComponent,
-    UpdateFormComponent
+    UpdateFormComponent,
+    FormArrayExampleComponent
   ],
   imports: [
     BrowserModule,
