@@ -11,6 +11,7 @@ const routes: Routes = [
   {path:'add-user',component: FormComponent},
   { path: 'update/:userid', component: UpdateFormComponent },
   { path: 'reactive-forms', component: FormArrayExampleComponent },
+  { path: 'nested-forms-array', component: FormArrayExampleComponent },
 
 ];
 
